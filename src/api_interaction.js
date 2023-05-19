@@ -35,9 +35,9 @@ async function gptInteraction() {
   try {
     const pregunta = await getPrompt();
     const respuesta = await getResult(pregunta);
-    console.log(respuesta.data.choices[0].message.content);
+    return respuesta.data.choices[0].message.content;
   } catch (error) {
-    console.error(error);
+    return error;
   }
 }
 
