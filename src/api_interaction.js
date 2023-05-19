@@ -21,21 +21,21 @@ const getPrompt = () => {
   });
 };
 
-const getResult = async (pregunta) => 
+const getResult = async (prompt) => 
   await openai.createChatCompletion({
       model: 'gpt-3.5-turbo',
       messages: [
-        {role:"user", content: `${pregunta}`}
-      ]
+        {role:"user", content: `${prompt}`}
+      ],
+      temperature: 0.3
   });
 
-;
 
 async function gptInteraction() {
   try {
-    const pregunta = await getPrompt();
-    const respuesta = await getResult(pregunta);
-    return respuesta.data.choices[0].message.content;
+    const prompt = await getPrompt();
+    const completion = await getResult(prompt);
+    return completion.data.choices[0].message.content;
   } catch (error) {
     return error;
   }
