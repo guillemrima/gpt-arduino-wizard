@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Implementation of chatgpt and arduino",
   "main": "index.js",
-  "type": "module",
   "directories": {
     "doc": "docs",
     "lib": "lib"

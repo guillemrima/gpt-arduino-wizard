@@ -1,11 +1,9 @@
-import { Configuration, OpenAIApi } from 'openai';
-import dotenv from 'dotenv';
-import prompt from 'prompt';
-
-dotenv.config();
+const { Configuration, OpenAIApi } = require('openai');
+const dotenv = require('dotenv').config();
+const prompt = require('prompt');
 
 const configuration = new Configuration({
-  apiKey: ''
+  apiKey: process.env.OPENAI_API_KEY
 });
 const openai = new OpenAIApi(configuration);
 
@@ -33,7 +31,7 @@ const getResult = async (pregunta) =>
 
 ;
 
-export async function gptInteraction() {
+async function gptInteraction() {
   try {
     const pregunta = await getPrompt();
     const respuesta = await getResult(pregunta);
@@ -43,3 +41,4 @@ export async function gptInteraction() {
   }
 }
 
+module.exports = gptInteraction

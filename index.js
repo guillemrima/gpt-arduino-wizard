@@ -1,1 +1,3 @@
-import {gptInteraction} from './src/api_interaction.js'
+const gptInteraction = require('./src/api_interaction')
+
+gptInteraction()
