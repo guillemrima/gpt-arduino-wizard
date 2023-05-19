@@ -42,5 +42,6 @@ Antes de utilizar la aplicación, se deben seguir los siguientes pasos de config
 ## Problemas
 
 Si encuentras algún problema o tienes alguna pregunta, por favor abre un nuevo Issue en el repositorio.
+
 ---
 
