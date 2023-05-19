@@ -1,0 +1,29 @@
+{
+  "name": "gpt-arduino-wizard",
+  "version": "1.0.0",
+  "description": "Implementation of chatgpt and arduino",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillemrima/gpt-arduino-wizard.git"
+  },
+  "author": "guillemrima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillemrima/gpt-arduino-wizard/issues"
+  },
+  "homepage": "https://github.com/guillemrima/gpt-arduino-wizard#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1",
+    "prompt": "^1.3.0"
+  }
+}
