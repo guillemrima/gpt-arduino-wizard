@@ -33,7 +33,7 @@ const getResult = async (pregunta) =>
 
 ;
 
-async function main() {
+export async function gptInteraction() {
   try {
     const pregunta = await getPrompt();
     const respuesta = await getResult(pregunta);
@@ -43,4 +43,3 @@ async function main() {
   }
 }
 
-main();

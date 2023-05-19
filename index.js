@@ -1,0 +1,1 @@
+import {gptInteraction} from './src/api_interaction.js'
