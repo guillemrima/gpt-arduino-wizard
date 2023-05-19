@@ -5,7 +5,7 @@ import prompt from 'prompt';
 dotenv.config();
 
 const configuration = new Configuration({
-  apiKey: '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'
+  apiKey: ''
 });
 const openai = new OpenAIApi(configuration);
 
