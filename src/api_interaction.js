@@ -27,7 +27,7 @@ const getResult = async (prompt) =>
       messages: [
         {role:"user", content: `${prompt}`}
       ],
-      temperature: 0.9
+      temperature: 0.1
   });
 
 
