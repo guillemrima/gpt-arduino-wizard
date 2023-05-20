@@ -30,7 +30,7 @@ Antes de utilizar la aplicación, se deben seguir los siguientes pasos de config
 
 ## Uso de la Aplicación
 
-1. Ejecuta el programa principal `main.ino` en tu dispositivo Arduino.
+1. Ejecuta el programa principal `npm run arduinogpt` en tu terminal.
 2. Inicia la aplicación y accede a la interfaz de chat.
 3. Ingresa tus consultas o requerimientos en el chat y espera la respuesta generada por la API de ChatGPT.
 4. El código de instalación generado se guardará automáticamente en el archivo de Arduino y se ejecutará en el dispositivo.
